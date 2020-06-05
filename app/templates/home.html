@@ -1,62 +1,13 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% extends "base.html" %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <title>MyWebsite</title>
-    <style>
+{% block content %}
+    <h2><b>About</b></h2>
+    <p>
+      The prediction is based on simple logistic model built above IEEE-CIS-Vesta Corporation real-world e-commerce transactions.
+      Though the best model built is LGBM model due to limitation in memory.
+      For further explanation in LGBM model, feel free to check on github.
+    </p>
+    <p>
       
-      .jumbotron {
-          background-image: url(static/img/img11.png);
-          background-size: cover;
-          height: 790px;
-          text-align: center;
-          margin-top: -100px;
-          margin-bottom: 0px
-      }
-
-      .jumbotron .display-4 {
-          color: #4d493e;
-          margin-top: 200px;
-      }
-
-      .jumbotron p {
-          color: #4d493e;
-          font-size: 25px;
-      }
-
-      .jumbotron hr {
-          border-color: #4d493e;
-          width: 400px;
-          border-width: 1px;
-
-      }
-
-      .jumbotron .btn {
-          background-color: lightseagreen;
-          border: none;
-          margin-top: 40px;
-      }
-
-    </style>
-  </head>
-  <body>
-      <!-- jumbotron -->
-      <div class="jumbotron">
-            <h1 class="display-4">WELCOME TO <br> <span class="font-weight-bold">CUSTOMER CHURN PREDICTION</span></h1>
-            <hr class="my-4">
-            <p class="lead">This is a simple website build to predict Customer Churn in Telecommunications Companies </p>
-            <a class="btn btn-info" href="/analysis" role="button">Get Started</a>
-      </div>
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-</html>
+    </p>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3><b>Please select</b></h3>
+<br><br>
+<form action= "/predict" method="POST">
+    <!-- Transaction Amount -->
+    <div>
+        <label>Transaction Amount:</label><br>
+        $
+        <input type="number" name="TransactionAMT", value="100"><br><br>
+    </div>
+    <!-- Card Type -->
+    <div>
+        <label>Card Type</label><br>
+        <select name="card4">
+            <option value="american express">American Express</option>
+            <option value="discover">Discover</option>
+            <option value="mastercard">Mastercard</option>
+            <option value="visa" selected>Visa</option>
+        </select><br><br>
+    </div>
+    <!-- Card Type -->
+    <div>
+        <label>Card Type</label><br>
+        <select name="card6">
+            <option value="credit" selected>Credit</option>
+            <option value="debit">Debit</option>
+            <option value="debit or credit">Debit or Credit</option>
+            <option value="charge card">Charge card</option>
+        </select><br><br>
+    </div>
+    <button type="submit" class="btn btn-info form-row">Submit</button>
+</form>
+{% endblock %}
