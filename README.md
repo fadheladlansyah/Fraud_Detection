@@ -33,7 +33,7 @@ By looking feature importance, feature engineering applied also show they works 
 
 ![Alt](image/lgbm_result_cm.png "cm") ![Alt](image/lgbm_result_rocauc.png "title-2")
 
-<img src='image/lgbm_result_feature_importance.png' width="800" height="300" />
+<img src='image/lgbm_result_feature_importance.png' width="500" height="550" />
 
 <hr>
 
