@@ -39,4 +39,10 @@ By looking feature importance, feature engineering applied also show they works 
 
 ## WEB APP
 
-ongoing
+Simple simulation workflow of predicting transaction fraud. While in the real case, most of the features are usually generated.
+
+1. _only works on scikit-learn 0.22.2 as specified in requirements_
+2. _using only simple model, due to the best model size_
+3. _using only some important input features as app interface_
+
+![Alt](image/app1.JPG "cm") ![Alt](image/app2.JPG "title-2")
