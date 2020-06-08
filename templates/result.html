@@ -14,9 +14,9 @@
 </p>
 
 {% if isFraud == 1%}
-<h3><b>YES</b></h3>
+<h3><b>{{isFraud_proba}}% YES</b></h3>
 {% else %}
-<h3><b>NO</b></h3>
+<h3><b>{{isFraud_proba}}% NO</b></h3>
 {% endif %}
 
 

@@ -36,10 +36,12 @@ def predict():
         instance_preprocessed_ = preprocess(instance_, preprocess_attr, pca_pipeline, imputer_encoder_pipeline)
 
         isFraud = clf.predict(instance_preprocessed_)[0]
+        isFraud_proba = clf.predict_proba(instance_preprocessed_)[0][isFraud]
 
         return render_template('result.html',
                                 instance_=list(instance_.T.to_dict().values())[0],
                                 isFraud=isFraud,
+                                isFraud_proba="{:.2f}".format(isFraud_proba*100),
                                 )
                     
     if request.method == 'GET':
