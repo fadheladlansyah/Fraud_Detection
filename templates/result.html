@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h3><b>Fraud?</b></h3>
+
+<p>
+    Transaction Amount : <b>{{instance_.TransactionAmt}}</b>
+</p>
+<p>
+    Card Type : <b>{{instance_.card4}}</b>
+</p>
+<p>
+    Card Category : <b>{{instance_.card6}}</b>
+</p>
+
+{% if isFraud == 1%}
+<h3><b>YES</b></h3>
+{% else %}
+<h3><b>NO</b></h3>
+{% endif %}
+
+
+
+{% endblock %}
